@@ -43,6 +43,7 @@ public class KalkulatorTests
     public void Bagi_ByZero()
     {
         // Test division by zero - should return Infinity or throw an exception based on implementation
-        Assert.IsTrue(double.IsInfinity(kalkulator.Bagi(1, 0)));
+         var kalkulator = new Kalkulator();
+         Assert.ThrowsException<DivideByZeroException>(() => kalkulator.Bagi(10, 0));
     }
 }

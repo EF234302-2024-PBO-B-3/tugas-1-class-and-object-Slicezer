@@ -25,17 +25,18 @@ public class SepedaTests
     [TestMethod]
     public void TampilkanInformasi_Output_Test()
     {
-        // Arrange
+    // Arrange
         var sepeda = new Sepeda("Polygon", "Mountain Bike", 14.5);
-        var expectedOutput = $"Merek: Polygon, Tipe: Mountain Bike, Berat: 14.5 kg{Environment.NewLine}";
+        var expectedOutput = $"Merk: Polygon, Tipe: Mountain Bike, Berat: 14.5 kg{Environment.NewLine}";
         using var sw = new StringWriter();
         Console.SetOut(sw);
 
-        // Act
+    // Act
         sepeda.TampilkanInformasi();
 
-        // Assert
+    // Assert
         var result = sw.ToString();
         Assert.AreEqual(expectedOutput, result);
     }
+
 }

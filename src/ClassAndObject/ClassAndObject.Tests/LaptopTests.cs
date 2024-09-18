@@ -23,7 +23,7 @@ namespace ClassAndObject.Tests.TokoLaptop
             // Assert
             Assert.AreEqual(expectedMerk, laptop.Merk, "Merk laptop tidak sesuai dengan yang diharapkan.");
             Assert.AreEqual(expectedProsesor, laptop.Prosesor, "Prosesor laptop tidak sesuai dengan yang diharapkan.");
-            Assert.AreEqual(expectedRam, laptop.Ram, "RAM laptop tidak sesuai dengan yang diharapkan.");
+            Assert.AreEqual(expectedRam, laptop.RAM, "RAM laptop tidak sesuai dengan yang diharapkan.");
             Assert.AreEqual(expectedPenyimpanan, laptop.Penyimpanan, "Penyimpanan laptop tidak sesuai dengan yang diharapkan.");
         }
 
